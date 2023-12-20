@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
+// import 'tw-elements-react/dist/css/tw-elements-react.min.css';
 
 const font = Montserrat({ subsets: ['cyrillic'] })
 
