@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/tw-elements/dist/js/**/*.js',
+    './node_modules/tw-elements-react/dist/js/**/*.js',
   ],
   darkMode: 'media', // or 'class'
   theme: {
@@ -1073,7 +1074,10 @@ const config: Config = {
       50: '50',
     },
   },
-  plugins: [require("tw-elements/dist/plugin.cjs")],
+  plugins: [
+    require('tw-elements-react/dist/plugin.cjs'),
+    require('tw-elements/dist/plugin.cjs'),
+  ],
 }
 
 export default config;
